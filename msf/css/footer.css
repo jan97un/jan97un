@@ -1,1 +1,40 @@
 @charset 'UTF-8';
+
+footer {
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer a {
+  color: #fff;
+}
+.foot-right .foot-sns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.foot-right .foot-sns li {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #616161;
+  border-radius: 50%;
+}
+.foot-right .foot-sns li a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+}
+.foot-right .foot-sns li a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

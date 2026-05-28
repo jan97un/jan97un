@@ -1,1 +1,37 @@
 @charset "utf-8";
+
+.arrow {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  z-index: 9001;
+}
+.arrow .bdWh {
+  position: relative;
+  width: 48px;
+  height: 80px;
+  border-radius: 48px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  opacity: 0.8;
+  transition: 1s;
+}
+.arrow .bdWh .arrowWh {
+  position: absolute;
+  left: 50%;
+  top: 33%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 32px;
+  animation: arrowWh 1.6s linear 0s infinite forwards;
+}
+.arrow .bdWh .arrowBl {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 32px;
+}
